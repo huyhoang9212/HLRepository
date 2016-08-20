@@ -3,3 +3,6 @@
 ################################################################################
 
 /HL/HL.Core/obj/Debug
+/HL/HL.Data/obj/Debug
+/HL/HL.Services/obj/Debug
+/HL/HL.Test/obj/Debug

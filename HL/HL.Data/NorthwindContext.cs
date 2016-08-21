@@ -15,7 +15,7 @@ namespace HL.Data
             :base("name=NorthwindContextConnectionString")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NorthwindContext,
-                Migrations.Configuration>("NorthwindContextConnectionString"));
+                Migrations.Configuration>("NorthwindContextConnectionString"));            
         }
 
         public DbSet<Customer> Customers { get; set; }

@@ -6,3 +6,8 @@
 /HL/HL.Data/obj/Debug
 /HL/HL.Services/obj/Debug
 /HL/HL.Test/obj/Debug
+/HL/HL.Core/bin/Debug
+/HL/HL.Data/bin/Debug
+/HL/HL.Services/bin/Debug
+/HL/HL.Test/bin/Debug
+/HL/packages/EntityFramework.6.1.3

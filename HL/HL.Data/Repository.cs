@@ -35,7 +35,7 @@ namespace HL.Data
 
         public void Update(TEntity entity)
         {
-            
+            _context.Entry(entity).State = EntityState.Modified;
         }
     }
 }

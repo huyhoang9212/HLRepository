@@ -15,16 +15,20 @@ namespace HL.Data
             :base("name=NorthwindContextConnectionString")
         {
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<NorthwindContext,
-                Migrations.Configuration>("NorthwindContextConnectionString"));            
+                Migrations.Configuration>("NorthwindContextConnectionString"));
+
+            //Configuration.ProxyCreationEnabled = false;      
         }
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CustomerMap());
             modelBuilder.Configurations.Add(new CategoryMap());
+            modelBuilder.Configurations.Add(new OrderMap());
         }
     }
 }

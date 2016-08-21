@@ -52,6 +52,7 @@
     <Compile Include="IRepository.cs" />
     <Compile Include="Mapping\CategoryMap.cs" />
     <Compile Include="Mapping\CustomerMap.cs" />
+    <Compile Include="Mapping\OrderMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NorthwindContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

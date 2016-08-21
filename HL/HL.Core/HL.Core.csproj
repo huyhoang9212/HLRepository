@@ -45,6 +45,7 @@
     <Compile Include="Domain\Category.cs" />
     <Compile Include="Domain\Customer.cs" />
     <Compile Include="Domain\Entity.cs" />
+    <Compile Include="Domain\Order.cs" />
     <Compile Include="Infrastructure\IObjectState.cs" />
     <Compile Include="Infrastructure\ObjectState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

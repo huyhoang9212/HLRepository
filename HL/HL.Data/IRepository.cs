@@ -1,5 +1,6 @@
 ﻿using System;
 using HL.Core.Infrastructure;
+using System.Linq;
 
 namespace HL.Data
 {
@@ -14,5 +15,7 @@ namespace HL.Data
         void Delete(TEntity entity);
 
         void Delete(object id);
+
+        IQueryable<TEntity> Queryable();
     }
 }

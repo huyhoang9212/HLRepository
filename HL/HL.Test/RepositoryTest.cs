@@ -15,10 +15,12 @@ namespace HL.Test
             {
                 var customerRepository = new Repository<Customer>(context);
                 var customer = customerRepository.Find("AS001");
+                customer.Address = "address changed.";
+                var entryCus = context.Entry(customer);
                 Assert.IsNotNull(customer);
 
-                var category = new Repository<Category>(context).Find(1);
-                Assert.IsNotNull(category);
+                var order = new Repository<Order>(context).Find(1);
+                Assert.IsNotNull(order);
             };
         }
     }

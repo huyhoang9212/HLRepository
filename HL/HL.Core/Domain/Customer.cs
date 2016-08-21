@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace HL.Core.Domain
 {
@@ -15,6 +15,8 @@ namespace HL.Core.Domain
         public string PostalCode { get; set; }
         public string Country { get; set; }
         public string Phone { get; set; }
-       // public string Fax { get; set; }
+        public string Fax { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

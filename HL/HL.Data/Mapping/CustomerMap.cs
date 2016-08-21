@@ -45,8 +45,8 @@ namespace HL.Data.Mapping
             this.Property(t => t.Phone)
                 .HasMaxLength(24);
 
-            //this.Property(t => t.Fax)
-            //    .HasMaxLength(24);
+            this.Property(t => t.Fax)
+                .HasMaxLength(24);
 
             // Table & Column Mappings
             this.ToTable("Customers");
@@ -60,7 +60,7 @@ namespace HL.Data.Mapping
             this.Property(t => t.PostalCode).HasColumnName("PostalCode");
             this.Property(t => t.Country).HasColumnName("Country");
             this.Property(t => t.Phone).HasColumnName("Phone");
-           //this.Property(t => t.Fax).HasColumnName("Fax");
+            this.Property(t => t.Fax).HasColumnName("Fax");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using HL.Core.Infrastructure;
 using System;
 using System.Data.Entity;
+using System.Linq;
 
 namespace HL.Data
 {
@@ -20,7 +21,7 @@ namespace HL.Data
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
         }
 
         public TEntity Find(params object[] keyValues)
@@ -31,6 +32,11 @@ namespace HL.Data
         public void Insert(TEntity entity)
         {
             _dbSet.Add(entity);
+        }
+
+        public IQueryable<TEntity> Queryable()
+        {
+            return _dbSet.AsQueryable();
         }
 
         public void Update(TEntity entity)

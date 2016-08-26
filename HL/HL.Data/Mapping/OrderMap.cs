@@ -51,8 +51,9 @@ namespace HL.Data.Mapping
 
             //Relationship
             this.HasOptional(o => o.Customer)
-                .WithMany(c => c.Orders)
-                .HasForeignKey(o => o.CustomerID);
+                .WithMany(c => c.Orders)                
+                .HasForeignKey(o => o.CustomerID)
+                .WillCascadeOnDelete(true);
         }
     }
 }

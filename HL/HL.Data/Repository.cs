@@ -1,4 +1,5 @@
-﻿using HL.Core.Infrastructure;
+﻿using HL.Core.Domain;
+using HL.Core.Infrastructure;
 using System;
 using System.Data.Entity;
 using System.Linq;
@@ -16,7 +17,8 @@ namespace HL.Data
         }
         public void Delete(object id)
         {
-            throw new NotImplementedException();
+            var entity = Find(id);
+            Delete(entity);
         }
 
         public void Delete(TEntity entity)
@@ -42,6 +44,7 @@ namespace HL.Data
         public void Update(TEntity entity)
         {
             _context.Entry(entity).State = EntityState.Modified;
+                  
         }
     }
 }

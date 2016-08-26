@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL.Services", "HL.Services\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL.Test", "HL.Test\HL.Test.csproj", "{5F77D9EB-97CD-408E-974E-406D41EA1425}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3A13FF65-F118-407A-9815-19C310914CC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL.ConsoleApp", "HL.Console\HL.ConsoleApp.csproj", "{9B08CE5A-E657-4C10-BECD-435586B46DD2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +37,16 @@ Global
 		{5F77D9EB-97CD-408E-974E-406D41EA1425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F77D9EB-97CD-408E-974E-406D41EA1425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F77D9EB-97CD-408E-974E-406D41EA1425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B08CE5A-E657-4C10-BECD-435586B46DD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B08CE5A-E657-4C10-BECD-435586B46DD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B08CE5A-E657-4C10-BECD-435586B46DD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B08CE5A-E657-4C10-BECD-435586B46DD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F77D9EB-97CD-408E-974E-406D41EA1425} = {3A13FF65-F118-407A-9815-19C310914CC8}
+		{9B08CE5A-E657-4C10-BECD-435586B46DD2} = {3A13FF65-F118-407A-9815-19C310914CC8}
 	EndGlobalSection
 EndGlobal

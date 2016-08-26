@@ -16,5 +16,14 @@ namespace HL.Test
             context.SaveChanges();
             Assert.IsNotNull(customer);
         }
+
+        public void TestEntryMethod()
+        {
+            using(var context = new NorthwindContext())
+            {
+                var customer = context.Customers.Find("AS001");
+                
+            }
+        }
     }
 }

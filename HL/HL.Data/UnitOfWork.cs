@@ -53,10 +53,5 @@ namespace HL.Data
             }
             this._disposed = true;
         }
-
-        IRepository<TEntity> IUnitOfWork.Repository<TEntity>()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

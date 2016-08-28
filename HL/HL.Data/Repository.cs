@@ -28,7 +28,7 @@ namespace HL.Data
             //_dbSet.Remove(entity);
         }
 
-        public TEntity Find(params object[] keyValues)
+        public virtual TEntity Find(params object[] keyValues)
         {
             return _dbSet.Find(keyValues);
         }

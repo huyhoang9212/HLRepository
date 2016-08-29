@@ -16,6 +16,8 @@ namespace HL.Services
         void DeleteCustomer(string CustomerId);
 
         Customer FindCustomerById(string customerId);
+
+        IQueryable<Customer> GetAllCustomers();
     }
 
     public class CustomerService : ICustomerService
@@ -26,7 +28,6 @@ namespace HL.Services
         {
             _unitOfWork = unitOfWork;
             _customerRepository = _unitOfWork.Repository<Customer>();
-           
         }
 
         public void CreateCustomer(Customer customer)
@@ -56,6 +57,11 @@ namespace HL.Services
         {
             _customerRepository.Update(customer);
             _unitOfWork.SaveChanges();
+        }
+
+        public IQueryable<Customer> GetAllCustomers()
+        {
+            return _customerRepository.Queryable();
         }
     }
 }
